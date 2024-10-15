@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Web App Lab</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Student Data</h1>
+    <div>
+        <button id="sync-btn">Load Data (Synchronous XMLHttpRequest)</button>
+        <button id="async-btn">Load Data (Asynchronous XMLHttpRequest)</button>
+        <button id="fetch-btn">Load Data (Fetch & Promises)</button>
+    </div>
+
+    <!-- Separate table placeholders for each approach -->
+    <h2>Synchronous XMLHttpRequest</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody id="sync-data"></tbody>
+    </table>
+
+    <h2>Asynchronous XMLHttpRequest with Callbacks</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody id="async-data"></tbody>
+    </table>
+
+    <h2>Fetch with Promises</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody id="fetch-data"></tbody>
+    </table>
+</body>
+</html>
